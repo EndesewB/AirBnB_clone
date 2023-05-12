@@ -1,5 +1,5 @@
-## Getting Started
-# What’s a command interpreter?
+# Getting Started
+## What’s a command interpreter?
 
 Do you remember the Shell? It’s exactly the same but limited to a specific use-case. In our case, we want to
 
@@ -21,7 +21,7 @@ be able to manage the objects of our project:
     
 
 # Learning Objectives
-# General
+## General
 * How to create a Python package.
 * How to create a command interpreter in Python using the cmd module
 * What is Unit testing and how to implement it in a large project
