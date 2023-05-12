@@ -5,15 +5,15 @@ Do you remember the Shell? It’s exactly the same but limited to a specific use
 
 be able to manage the objects of our project:
 
-    * Create a new object (ex: a new User or a new Place)
+    * Create a new object (ex: a new User or a new Place).
     
     * Retrieve an object from a file, a database etc…
 
-    * Do operations on objects (count, compute stats, etc…)
+    * Do operations on objects (count, compute stats, etc…).
 
-    * Update attributes of an object
+    * Update attributes of an object.
 
-    * Destroy an object
+    * Destroy an object.
 
 # Learning Objectives
 # General
