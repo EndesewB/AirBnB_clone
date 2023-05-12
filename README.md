@@ -42,44 +42,19 @@ be able to manage the objects of our project:
 
 Your shell should work like this in interactive mode:
 
-(hbnb) help
-
-Documented commands (type help <topic>):
-========================================
-EOF  help  quit
-
-(hbnb) 
-(hbnb) help quit
-Quit command to exit the program
-
-(hbnb) 
-(hbnb) 
-(hbnb) quit 
-
-But also in non-interactive mode: (like the Shell project in C)
-
-$ echo "help" | ./console.py
-
+(hbnb)create Place
+93d823aa-f03a-41f6-bf80-aecaa7445d1d
 (hbnb)
-
-/*Documented commands (type help <topic>):
-========================================
-
-EOF help quit
+(hbnb)create User
+07563c34-e7f8-4b20-84bb-73ff9e30291b
 (hbnb)
-$
-$ cat test_help
-help
-$
-$ cat test_help | ./console.py
+(hbnb)User.create()
+b81095e8-1ad3-4ccf-b525-695baac4d071
 (hbnb)
-
-  
-/*Documented commands (type help <topic>):
-========================================
-EOF help quit
+(hbnb)BaseModel.create()
+5984b7e6-8c9b-4593-ac87-6bc17a9c400d
 (hbnb)
-$
+(hbnb)
 
 #Usage Examples
 
