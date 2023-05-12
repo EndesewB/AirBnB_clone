@@ -38,19 +38,17 @@ be able to manage the objects of our project:
 
 Your shell should work like this in interactive mode:
 
-(hbnb)create Place
-93d823aa-f03a-41f6-bf80-aecaa7445d1d
-(hbnb)
-(hbnb)create User
-07563c34-e7f8-4b20-84bb-73ff9e30291b
-(hbnb)
-(hbnb)User.create()
-b81095e8-1ad3-4ccf-b525-695baac4d071
-(hbnb)
-(hbnb)BaseModel.create()
-5984b7e6-8c9b-4593-ac87-6bc17a9c400d
+$ ./console.py
+(hbnb) help
+
+Documented commands (type help <topic>):
+========================================
+EOF help quit
+
 (hbnb)
 (hbnb)
+(hbnb) quit
+$
 
 #Usage Examples
 
