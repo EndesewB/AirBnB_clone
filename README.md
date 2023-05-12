@@ -47,12 +47,12 @@ EOF help quit
 (hbnb)
 (hbnb)
 (hbnb) quit
-$
+$ ```
 
+```
 # Usage Examples
 
 Launching the console
-
+```
 $ ./console.py
-(hbnb) 
-
+(hbnb) ```
