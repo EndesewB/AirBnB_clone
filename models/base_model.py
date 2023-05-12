@@ -10,7 +10,6 @@ the date and time in which a class was created and updated,
 a standard format to print the class content, a way to save
 the data created from the instances and finally the representation
 of all the keys and values of an instance.
-
 """
 
 from datetime import datetime
@@ -32,7 +31,6 @@ class BaseModel:
         updated_at (datetime): The current date and time that
             an instance is created and it will be updated every
             time that the object changes.
-
     """
 
     def __init__(self, *args, **kwargs):
@@ -40,8 +38,8 @@ class BaseModel:
 
         Here, the default values of a Base Model
         instance are initialized.
-
         """
+
         if kwargs:
             for arg, val in kwargs.items():
                 if arg in ('created_at', 'updated_at'):
@@ -68,6 +66,7 @@ class BaseModel:
             $ [<class name>] (<self.id>) <self.__dict__>
 
         """
+
         return '[{0}] ({1}) {2}'.format(
                 self.__class__.__name__, self.id, self.__dict__
             )
@@ -78,8 +77,8 @@ class BaseModel:
         Updates the public instance attribute `updated_at`
         with the current datetime and dumps the class data
         into a file
-
         """
+
         self.updated_at = datetime.now()
         models.storage.save()
 
@@ -88,8 +87,8 @@ class BaseModel:
 
         Returns a new dictionary containing all keys/values
         of __dict__ of the instance.
-
         """
+
         class_info = self.__dict__.copy()
         class_info['__class__'] = self.__class__.__name__
         class_info['created_at'] = self.created_at.isoformat()
