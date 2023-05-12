@@ -36,7 +36,7 @@ be able to manage the objects of our project:
 
 # Execution
 
-Your shell should work like this in interactive mode:
+## Your shell should work like this in interactive mode:
 
 $ ./console.py
 (hbnb) help
@@ -51,10 +51,10 @@ EOF help quit
 (hbnb) quit
 $
 
-But also in non-interactive mode: (like the Shell project in C)
+## But also in non-interactive mode: (like the Shell project in C)
 
 $ echo "help" | ./console.py
-But also in non-interactive mode: (like the Shell project in C)
+## But also in non-interactive mode: (like the Shell project in C)
 
 $ echo "help" | ./console.py
 
