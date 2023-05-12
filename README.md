@@ -39,6 +39,7 @@ vagrantAirBnB_clone$./console.py
 (hbnb) help
 
 Documented commands (type help <topic>):
+    
 ========================================
 EOF  all  create  destroy  help  quit  show  update
 
