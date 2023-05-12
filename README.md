@@ -33,27 +33,48 @@ be able to manage the objects of our project:
 * What is **kwargs and how to use it
 * How to handle named arguments in a function
 
-# Examples of use
+# Execution
 
-```vagrantAirBnB_clone$./console.py
+Your shell should work like this in interactive mode:
+```
+$ ./console.py
 (hbnb) help
 
 Documented commands (type help <topic>):
 ========================================
-EOF  all  create  destroy  help  quit  show  update
+EOF help quit
 
-(hbnb) all MyModel
-** class doesn't exist **
-(hbnb) create BaseModel
-[7da56403-cc45-4f1c-ad32-bfafeb2bb050]
-(hbnb) all BaseModel
-[[BaseModel] (7da56403-cc45-4f1c-ad32-bfafeb2bb050) {'updated_at': datetime.datetime(2017, 9, 28, 9, 50, 46, 772167), 'id': '7da56403-cc45-4f1c-ad32-bfafeb2bb050', 'created_at': datetime.datetime(2017, 9, 28, 9, 50, 46, 772123)}]
-(hbnb) show BaseModel [7da56403-cc45-4f1c-ad32-bfafeb2bb050]
-[BaseModel] (7da56403-cc45-4f1c-ad32-bfafeb2bb050) {'updated_at': datetime.datetime(2017, 9, 28, 9, 50, 46, 772167), 'id': '7da56403-cc45-4f1c-ad32-bfafeb2bb050', 'created_at': datetime.datetime(2017, 9, 28, 9, 50, 46, 772123)}
-(hbnb) destroy BaseModel [7da56403-cc45-4f1c-ad32-bfafeb2bb050]
-(hbnb) show BaseModel [7da56403-cc45-4f1c-ad32-bfafeb2bb050]
-** no instance found **
-(hbnb) quit```
+(hbnb)
+(hbnb)
+(hbnb) quit
+$```
+
+But also in non-interactive mode: (like the Shell project in C)
+
+```
+$ echo "help" | ./console.py
+
+(hbnb)
+
+Documented commands (type help <topic>):
+========================================
+
+EOF help quit
+(hbnb)
+$
+$ cat test_help
+help
+$
+$ cat test_help | ./console.py
+(hbnb)
+
+  
+Documented commands (type help <topic>):
+========================================
+EOF help quit
+(hbnb)
+$```
+
 
 
 
