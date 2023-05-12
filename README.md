@@ -35,7 +35,7 @@ be able to manage the objects of our project:
 
 # Examples of use
 
-`vagrantAirBnB_clone$./console.py
+```vagrantAirBnB_clone$./console.py
 (hbnb) help
 
 Documented commands (type help <topic>):
@@ -53,7 +53,7 @@ EOF  all  create  destroy  help  quit  show  update
 (hbnb) destroy BaseModel [7da56403-cc45-4f1c-ad32-bfafeb2bb050]
 (hbnb) show BaseModel [7da56403-cc45-4f1c-ad32-bfafeb2bb050]
 ** no instance found **
-(hbnb) quit`
+(hbnb) quit```
 
 
 
