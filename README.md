@@ -33,20 +33,3 @@ be able to manage the objects of our project:
 * What is **kwargs and how to use it
 * How to handle named arguments in a function
 
-# Execution
-
-Your shell should work like this in interactive mode:
-```
-$ ./console.py
-(hbnb) help
-
-Documented commands (type help <topic>):
-========================================
-EOF help quit
-
-(hbnb)
-(hbnb)
-(hbnb) quit
-$```
-
-
