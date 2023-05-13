@@ -187,3 +187,12 @@ by adding or updating attribute.
                 print(line)
 
         return line
+
+    def emptyline(self):
+        """Empty line"""
+
+        pass
+
+
+if __name__ == '__main__':
+    HBNBCommand().cmdloop()
