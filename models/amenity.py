@@ -7,7 +7,7 @@ Amenity Module contains the attributes to be assigned
 to the Amenities of the places.
 """
 
-from base_model import BaseModel
+from .base_model import BaseModel
 
 
 class Amenity(BaseModel):
