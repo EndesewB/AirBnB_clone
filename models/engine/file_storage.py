@@ -61,8 +61,11 @@ class FileStorage:
         on the file will be deserialized and appended to the `__objects`
         class attribute like an instance with the object data.
         """
-        if path.exists(self.__file_path):
-            with open(self.__file_path, mode='r', encoding='utf-8') as f:
-                json_dict = json.loads(f.read())
-                for k, v in json_dict.items():
-                    self.__objects[k] = eval(v['__class__'])(**v)
+        try:
+            if path.exists(self.__file_path):
+                with open(self.__file_path, mode='r', encoding='utf-8') as f:
+                    json_dict = json.loads(f.read())
+                    for k, v in json_dict.items():
+                        self.__objects[k] = eval(v['__class__'])(**v)
+        except FileNotFoundError:
+            pass
