@@ -3,7 +3,7 @@
 """
 The module that creates the State clas
 """
-from models.base_model import BaseModel
+from .base_model import BaseModel
 
 
 class State(BaseModel):
