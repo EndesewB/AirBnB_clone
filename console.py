@@ -150,7 +150,7 @@ by adding or updating attribute.
         """Usage: count <class> or <class>.count()
         Retrieve the number of instances of a given class."""
         obj = models.storage.all()
-        class_name = line.split('.')[0] if '.' in line else line
+        class_name = arg.split('.')[0] if '.' in line else line
         c = [obj for obj in obj.values() if type(obj).__name__ == class_name]
         print(len(c))
 
