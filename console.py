@@ -170,29 +170,23 @@ by adding or updating attribute.
         args = line.split('.')
         if len(args) >= 2:
             if args[1].count('()') == 1:
-                clas_name = args[0]
+                class_name = args[0]
                 a = args[1].replace('(', '.')
                 b = a.replace(')', '.')
                 c = b.split('.')
-                comand = c[0]
-            # print(clas_name)
-            # print(comand)
-            # print(argvs)
-                line = str(comand + ' ' + clas_name)
+                command = c[0]
+                line = f"{command} {class_name}"
             elif args[1].count('(') == 1 and args[1].count(')') == 1:
-                arguments = ""
-                clas_name = args[0]
+                class_name = args[0]
                 a = args[1].replace('(', '.')
                 b = a.replace(')', '.')
                 c = b.split('.')
-                comand = c[0]
-                argvs = shlex.split(c[1], '"')
-                for wrd in argvs:
-                    arguments = arguments + wrd
-
-                d = str(comand + ' ' + clas_name + ' ' + arguments)
-                line = d.replace(',', ' ')
-                print(line)
+                command = c[0]
+                arguments = c[1].replace('{', '').replace('}', '')
+                arguments = arguments.replace(':', ' ').replace(',', '')
+                arguments = arguments.replace('"', '')
+                arguments = arguments.replace("'", '')
+                line = f"{command} {class_name} {arguments}"
 
         return line
 
