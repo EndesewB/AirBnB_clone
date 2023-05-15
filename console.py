@@ -149,11 +149,10 @@ by adding or updating attribute.
     def do_count(self, arg):
         """Usage: count <class> or <class>.count()
         Retrieve the number of instances of a given class."""
-        objects = models.storage.all()
-        
+        obj = models.storage.all()
         class_name = line.split('.')[0] if '.' in line else line
-        count = len([obj for obj in objects.values() if type(obj).__name__ == class_name])
-        print(count)
+        c = [obj for obj in obj.values() if type(obj).__name__ == class_name]
+        print(len(c))
 
     def precmd(self, line):
         """ Preprocesses a line of input before executing a command.
